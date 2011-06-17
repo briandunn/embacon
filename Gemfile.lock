@@ -1,0 +1,29 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    configuration (1.2.0)
+    heroku (2.2.1)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      term-ansicolor (~> 1.0.5)
+    launchy (0.4.0)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
+    mime-types (1.16)
+    nokogiri (1.4.4)
+    rack (1.3.0)
+    rack-jsonp (1.2.0)
+      rack
+    rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
+    term-ansicolor (1.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  heroku
+  nokogiri
+  rack
+  rack-jsonp
