@@ -2,9 +2,10 @@ require 'nokogiri'
 require 'open-uri'
 class Embacon
   def call env
-    unless env["PATH_INFO"] == '/'
+    case env['PATH_INFO'] 
+    when '/index.json'
       [200, {'Content-Type' => 'json'}, [%<"#{fetch_bacon}">]]
-    else
+    when '/'
       [302, {'Location' => '/index.html', 'Content-Type' => 'text/plain'}, []]
     end
   end
