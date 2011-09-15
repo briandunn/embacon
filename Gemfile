@@ -1,8 +1,8 @@
 source :rubygems
 gem 'heroku'
+gem 'jasmine', git: 'https://github.com/briandunn/jasmine-gem.git'
 gem 'nokogiri'
 gem 'rack'
-gem 'jasmine', git: 'https://github.com/pivotal/jasmine-gem.git'
-gem 'rspec-core'
-gem 'rack-jsonp'
+gem 'rack-jsonp', git: 'https://github.com/briandunn/rack-jsonp.git'
 gem 'rake'
+gem 'rspec-core'
