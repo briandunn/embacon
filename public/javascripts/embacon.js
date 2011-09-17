@@ -17,7 +17,7 @@
     fill: function(baconIpsum) {
       this.target.value = baconIpsum;
       this.target.style.cursor = this.cursor;
-      return this.scriptTag.parentElement.removeChild(this.scriptTag);
+      return this.scriptTag.parentNode.removeChild(this.scriptTag);
     }
   };
   window.Bacon = Bacon;

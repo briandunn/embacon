@@ -15,6 +15,6 @@ Bacon =
   fill: (baconIpsum) ->
     @target.value = baconIpsum
     @target.style.cursor = @cursor
-    @scriptTag.parentElement.removeChild @scriptTag
+    @scriptTag.parentNode.removeChild @scriptTag
 
 window.Bacon = Bacon
