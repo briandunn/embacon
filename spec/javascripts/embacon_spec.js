@@ -65,7 +65,8 @@
         this.fixtures = [];
         return this.fixtures.push(this.input = $('<input>', {
           type: 'text',
-          size: 20
+          size: 20,
+          style: 'cursor: auto'
         }).appendTo('body').focus());
       });
       afterEach(function() {

@@ -30,7 +30,7 @@ describe 'embacon', ->
   describe 'when a text field is focused', ->
     beforeEach ->
       @fixtures = []
-      @fixtures.push @input = $('<input>', type: 'text', size: 20).appendTo('body').focus()
+      @fixtures.push @input = $('<input>', type: 'text', size: 20, style: 'cursor: auto').appendTo('body').focus()
     afterEach ->
       fixture.remove() for fixture in @fixtures
       $("head script[src^='#{callbackUrl}']").remove()
